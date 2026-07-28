@@ -544,6 +544,19 @@
             .pulse, .btn-wp, .btn-wp-lg, .nav-cta { animation: none; transition: none; }
         }
         /* =====================
+           FAQ
+        ===================== */
+        .section-faq { background: var(--fondo); }
+        .faq { margin-top: 2.5rem; max-width: 760px; display: flex; flex-direction: column; gap: 0.75rem; }
+        .faq-item { background: var(--blanco); border: 1px solid var(--borde); border-radius: var(--radio); overflow: hidden; }
+        .faq-item summary { cursor: pointer; list-style: none; padding: 1.15rem 1.35rem; font-family: 'Lora', serif; font-weight: 500; font-size: 1.02rem; color: var(--texto); display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: '+'; color: var(--verde); font-size: 1.4rem; line-height: 1; flex-shrink: 0; }
+        .faq-item[open] summary::after { content: '\2212'; }
+        .faq-a { padding: 0 1.35rem 1.25rem; }
+        .faq-a p { font-size: 0.92rem; color: var(--texto-sec); line-height: 1.7; }
+
+        /* =====================
            COOKIES
         ===================== */
         .cookie-banner{position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:200;max-width:560px;margin:0 auto;background:var(--blanco);border:1px solid var(--borde);border-radius:var(--radio);box-shadow:0 8px 40px rgba(26,44,39,0.18);padding:1.15rem 1.25rem;}
@@ -579,6 +592,9 @@
         "https://g.page/r/Cb2_dpnyIMRCEBM/review"
       ]
     }
+    </script>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "\u00bfLa terapia online funciona igual que la presencial?", "acceptedAnswer": {"@type": "Answer", "text": "La evidencia disponible indica que, para muchos motivos de consulta, la terapia online puede ser tan eficaz como la presencial. Lo importante no es tanto el medio como el v\u00ednculo y el trabajo que se construye. Y si en alg\u00fan caso considero que necesit\u00e1s otro tipo de abordaje, te lo digo con honestidad."}}, {"@type": "Question", "name": "\u00bfC\u00f3mo es una sesi\u00f3n y qu\u00e9 necesito?", "acceptedAnswer": {"@type": "Answer", "text": "Nos vemos por videollamada a trav\u00e9s de Doxy.me. Te llega un enlace, hac\u00e9s clic y entr\u00e1s: no ten\u00e9s que descargar ni instalar nada. Solo necesit\u00e1s un dispositivo con c\u00e1mara, conexi\u00f3n a internet y un espacio donde te sientas tranquilo o tranquila."}}, {"@type": "Question", "name": "\u00bfEs confidencial?", "acceptedAnswer": {"@type": "Answer", "text": "S\u00ed. Todo lo que hablamos est\u00e1 protegido por el secreto profesional, y la plataforma de videollamada es segura y est\u00e1 pensada espec\u00edficamente para el \u00e1mbito sanitario."}}, {"@type": "Question", "name": "\u00bfCu\u00e1nto dura y cu\u00e1nto cuesta una sesi\u00f3n?", "acceptedAnswer": {"@type": "Answer", "text": "Cada sesi\u00f3n individual dura 50 minutos y cuesta 60\u20ac. La primera consulta es informativa y sin costo: sirve para conocernos y ver juntos si puedo acompa\u00f1arte."}}, {"@type": "Question", "name": "\u00bfDesde d\u00f3nde pod\u00e9s atenderme?", "acceptedAnswer": {"@type": "Answer", "text": "Atiendo en espa\u00f1ol a personas adultas en Espa\u00f1a y en cualquier parte de Europa. Al ser todo online, lo \u00fanico que necesitamos es coordinar un horario que nos sirva a los dos."}}, {"@type": "Question", "name": "\u00bfC\u00f3mo empiezo?", "acceptedAnswer": {"@type": "Answer", "text": "Escribime por WhatsApp desde cualquier bot\u00f3n de esta p\u00e1gina. Coordinamos esa primera consulta informativa sin costo y desde ah\u00ed vemos c\u00f3mo seguir. No necesit\u00e1s tener nada resuelto de antemano."}}]}
     </script>
 </head>
 <body>
@@ -821,6 +837,42 @@
 </section>
 
 <!-- ==================
+     FAQ
+================== -->
+<section class="section section-faq">
+    <div class="section-inner">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2 class="section-h2">Lo que solés querer saber antes de empezar</h2>
+        <div class="faq">
+            <details class="faq-item">
+                <summary>¿La terapia online funciona igual que la presencial?</summary>
+                <div class="faq-a"><p>La evidencia disponible indica que, para muchos motivos de consulta, la terapia online puede ser tan eficaz como la presencial. Lo importante no es tanto el medio como el vínculo y el trabajo que se construye. Y si en algún caso considero que necesitás otro tipo de abordaje, te lo digo con honestidad.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cómo es una sesión y qué necesito?</summary>
+                <div class="faq-a"><p>Nos vemos por videollamada a través de Doxy.me. Te llega un enlace, hacés clic y entrás: no tenés que descargar ni instalar nada. Solo necesitás un dispositivo con cámara, conexión a internet y un espacio donde te sientas tranquilo o tranquila.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary>¿Es confidencial?</summary>
+                <div class="faq-a"><p>Sí. Todo lo que hablamos está protegido por el secreto profesional, y la plataforma de videollamada es segura y está pensada específicamente para el ámbito sanitario.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto dura y cuánto cuesta una sesión?</summary>
+                <div class="faq-a"><p>Cada sesión individual dura 50 minutos y cuesta 60€. La primera consulta es informativa y sin costo: sirve para conocernos y ver juntos si puedo acompañarte.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary>¿Desde dónde podés atenderme?</summary>
+                <div class="faq-a"><p>Atiendo en español a personas adultas en España y en cualquier parte de Europa. Al ser todo online, lo único que necesitamos es coordinar un horario que nos sirva a los dos.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cómo empiezo?</summary>
+                <div class="faq-a"><p>Escribime por WhatsApp desde cualquier botón de esta página. Coordinamos esa primera consulta informativa sin costo y desde ahí vemos cómo seguir. No necesitás tener nada resuelto de antemano.</p></div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- ==================
      CTA FINAL
 ================== -->
 <section class="section section-cta">
@@ -869,6 +921,15 @@
     function set(v){ try { localStorage.setItem('cookieConsent', v); } catch(e){} b.hidden = true; if (v === 'granted' && window.loadGA) window.loadGA(); }
     document.getElementById('cookie-accept').addEventListener('click', function(){ set('granted'); });
     document.getElementById('cookie-reject').addEventListener('click', function(){ set('denied'); });
+  })();
+</script>
+<script>
+  // Evento de conversión: clic en WhatsApp (solo si hay consentimiento/GA cargado)
+  (function () {
+    function track(){ if (window.gtag) { window.gtag('event', 'contacto_whatsapp', { transport_type: 'beacon' }); } }
+    document.querySelectorAll('a[href*="wa.me/"]').forEach(function (a) {
+      a.addEventListener('click', track);
+    });
   })();
 </script>
 </body>
